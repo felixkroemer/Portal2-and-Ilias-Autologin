@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Portal2 and Ilias Autologin",
+    "version": "1.0",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://ilias.uni-mannheim.de/login.php*",
+                    "*://cas.uni-mannheim.de/cas/login*",
+                    "*://portal2.uni-mannheim.de/portal2*"],
+        "js": ["autologin/autologin.js"]
+      }
+    ] 
+  }
+  
